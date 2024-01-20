@@ -95,6 +95,7 @@ function finishGame() {
   `
     <p class="final-message">
       Você acertou ${totalCorrect} de ${totalQuestions} questões!
+      <span>Ou seja, ${performance}%</span>
       <span>Resultado: ${message}</span>
     </p>
     <button 
@@ -106,67 +107,61 @@ function finishGame() {
   `
 }
 
-
 const questions = [
   {
-    question: "Dentro de qual elemento HTML colocamos o JavaScript?",
+    question: "Qual o meu prato favorito?",
     answers: [
-      { text: "<javascript>", correct: false },
-      { text: "<js>", correct: false },
-      { text: "<script>", correct: true },
-      { text: "<scripting>", correct: false }
+      { text: "Macarronada", correct: false },
+      { text: "Lasanha", correct: false },
+      { text: "Strogonoff", correct: true },
+      { text: "Bife acebolado", correct: false }
     ]
   },
   {
-    question: "Onde é o lugar correto para inserir JavaScript?",
+    question: "O que você faria ao conquistar R$ 1.000.000,00?",
     answers: [
-      { text: "Tanto no <head> quanto no <body> está correto", correct: true },
-      { text: "No <body>", correct: false },
-      { text: "No <head>", correct: false },
-      { text: "Em outro lugar", correct: false }
+      { text: "Compraria uma casa para meus pais e irmãos", correct: true },
+      { text: "Faria viagens para conhecer muitos lugares", correct: false },
+      { text: "Investiria na educação e montar um negócio próprio", correct: false },
+      { text: "Adquiriria prédios de apartamentos e locaria imóveis", correct: false }
     ]
   },
   {
-    question: 'Qual é a sintaxe correta para se referir a um script externo chamado "xxx.js"',
+    question: "Qual é o tipo de música que eu gosto de ouvir?",
     answers: [
-      { text: '<script src="xxx.js">', correct: true },
-      { text: '<script href="xxx.js">', correct: false },
-      { text: '<script name="xxx.js">', correct: false },
-      { text: "Nenhuma das alternativas", correct: false }
+      { text: 'Sertanejo universitário', correct: false },
+      { text: 'Rock / Eletrônica', correct: false },
+      { text: 'Pop / MPB', correct: false },
+      { text: "Funk / Pagode", correct: true }
     ]
   },
   {
-    question: 'O arquivo JavaScript externo deve conter a tag <script>',
+    question: 'Que tipo de passatempo ou hobby gosto de fazer?',
     answers: [
-      { text: "Verdadeiro", correct: false },
-      { text: "Falso", correct: true }
+      { text: "Pescar com a família", correct: false },
+      { text: "Viajar para novos lugares", correct: false },
+      { text: "Ler bons livros", correct: true },
+      { text: "Não fazer nada", correct: false }
     ]
   },
   {
-    question: 'Como escrever "Hello World" numa caixa de alerta?',
+    question: 'Quem é o meu melhor amigo?',
     answers: [
-      { text: 'msg("Hello World");', correct: false },
-      { text: 'alert("Hello World");', correct: true },
-      { text: 'msgBox("Hello World");', correct: false },
-      { text: 'alertBox("Hello World");', correct: false }
+      { text: 'Fulano', correct: false },
+      { text: 'Beltrano', correct: true },
+      { text: 'Sicrano', correct: false },
+      { text: 'Fiquei na dúvida', correct: false }
     ]
-  },
-  {
-    question: 'Como podemos criar uma função no JavaScript?',
-    answers: [
-      { text: 'function:myFunction()', correct: false },
-      { text: 'function myFunction()', correct: true },
-      { text: 'function = myFunction()', correct: false },
-      { text: 'Nenhum desses códigos criaria uma função', correct: false }
-    ]
-  },
-  {
-    question: 'Como podemos chamar uma função chamada "minhaFuncao"?',
-    answers: [
-      { text: 'call minhaFuncao()', correct: false },
-      { text: 'call function minhaFuncao()', correct: false },
-      { text: 'Nenhum desses códigos chamaria essa função', correct: false },
-      { text: 'minhaFuncao()', correct: true },
-    ]
-  },
-]
+  },  
+];
+
+function exibeMenu() {
+  let itens = document.getElementById('itens');
+
+  if(itens.style.display == 'none') {
+      itens.style.display = 'block';
+  }
+  else {
+      itens.style.display = 'none';
+  }    
+}

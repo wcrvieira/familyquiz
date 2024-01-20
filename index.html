@@ -5,11 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
-  <script src="index.js" async></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <script src="js/index.js" async></script>
 
-  <title>Quiz JavaScript</title>
+  <title>Family Quiz</title>
 </head>
+
+<header>  
+  <input type="checkbox" id="check">
+  <label id="icone" for="check"></label>
+  <section class="barra">
+    <nav>
+      <a href="#"><div class="Link">Home</div></a>
+      <a href="#"><div class="Link">Dicas</div></a>        
+      <a href="#"><div class="Link">Curiosidades</div></a>
+      <a href="#"><div class="Link">Contato</div></a>
+    </nav>
+  </section>   
+
+  <nav class="menu">       
+    <a href="index.html">           
+      <h1 id="texto">Integração família Sesi Senai 2024</h1>
+    </a>    
+    <figure>
+      <img class="logo" src="images/sesisenai.png" alt="">
+    </figure>  
+  </nav>
+
+  <label for="menu-hamburguer">
+    <section id="menu-hamburguer">
+      <span class="hamburguer"></span>
+    </section>
+  </label>
+</header>
+
 <body>
   <div class="container">
     <div class="questions-container hide">

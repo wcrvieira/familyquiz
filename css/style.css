@@ -9,7 +9,7 @@ button {
 }
 
 body {
-  background-color: #121214;
+  background-color: #9e1843;
   color: #fff;
   height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  background-color: #121214;
+  background-color: #763449;
   width: 90%;
   max-width: 800px;
 
@@ -100,5 +100,5 @@ body {
 }
 
 .incorrect {
-  background-color: #a10101;
+  background-color: #df5e5e;
 }
