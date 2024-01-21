@@ -1,60 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/menu.css">
-  <script src="js/index.js" async></script>
-
+  <meta name="author" content="Wagner Cesar Vieira">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Family Quiz</title>
+
+  <!-- Google Fonts - Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Meu CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>  
-  <input type="checkbox" id="check">
-  <label id="icone" for="check"></label>
-  <section class="barra">
-    <nav>
-      <a href="#"><div class="Link">Home</div></a>
-      <a href="#"><div class="Link">Dicas</div></a>        
-      <a href="#"><div class="Link">Curiosidades</div></a>
-      <a href="#"><div class="Link">Contato</div></a>
-    </nav>
-  </section>   
-
-  <nav class="menu">       
-    <a href="index.html">           
-      <h1 id="texto">Integração família Sesi Senai 2024</h1>
-    </a>    
-    <figure>
-      <img class="logo" src="images/sesisenai.png" alt="">
-    </figure>  
-  </nav>
-
-  <label for="menu-hamburguer">
-    <section id="menu-hamburguer">
-      <span class="hamburguer"></span>
-    </section>
-  </label>
-</header>
-
 <body>
-  <div class="container">
-    <div class="questions-container hide">
-      <span class="question">Pergunta aqui?</span>
-      <div class="answers-container">
-        <button class="answer button">Resposta 1</button>
-        <button class="answer button">Resposta 2</button>
-        <button class="answer button">Resposta 3</button>
-        <button class="answer button">Resposta 4</button>
-      </div>
-    </div>
-    <div class="controls-container">
-      <button class="start-quiz button">Começar Quiz!</button>
-      <button class="next-question button hide">Próxima pergunta</button>
-    </div>
-  </div>
-</body>
+  <header>
+    <!-- Construção da barra de navegação -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-cor-menu">
+      <section class="container-fluid py-2">
+        <a href="" class="navbar-brand">
+          <img src="images/sesisenai.png" alt="Sumiu" class="img-fluid">
+          <span class="texto">Family Quiz</span>
+        </a>
+
+        <!-- Definição do botão do menu hamburguer -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+          aria-current="navbar" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-menu-button-wide"></i>
+        </button>
+
+        <!-- Definindo os itens do menu -->
+        <section class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#topics-container" class="nav-link">Definição</a></li>
+            <li class="nav-item"><a href="#cards-container" class="nav-link">Operações</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="#footer" class="nav-link">Contato</a></li>
+          </ul>
+        </section>
+      </section>
+    </nav>
+  </header>
+
+  <body>
+    <section class="container">
+      <section class="questions-container hide">
+        <span class="question">Pergunta aqui?</span>
+        <section class="answers-container">
+          <button class="answer button">Resposta 1</button>
+          <button class="answer button">Resposta 2</button>
+          <button class="answer button">Resposta 3</button>
+          <button class="answer button">Resposta 4</button>
+        </section>
+      </section>
+      <section class="controls-container">
+        <button class="start-quiz button">Começar Quiz!</button>
+        <button class="next-question button hide">Próxima pergunta</button>
+      </section>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <!-- Meu JS -->
+    <script src="js/index.js"></script>
+  </body>
+
 </html>
